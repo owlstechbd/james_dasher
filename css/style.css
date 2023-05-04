@@ -219,7 +219,6 @@ canvas {
 
 /* footer */
 footer{
-	position: relative;
 	width: 100%;
 	display: flex;
 	padding: 20px 0;
@@ -351,9 +350,11 @@ footer ul li a:hover{
 	color: #43D9AD;
 	cursor: pointer;
 }
-.project-box{
+.project-filter{
 	width: 100%;
+	display: flex;
 }
+
 .project-iteam{
 	width: 100%;
 	display: flex;
