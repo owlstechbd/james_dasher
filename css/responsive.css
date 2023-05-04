@@ -1,0 +1,101 @@
+@media screen and (max-width: 720px){
+
+
+    .for-desktop{
+        display: none;
+    }
+    .for-mobile{
+        display: block;
+    }
+    .navbar-brand p{
+        color: #43D9AD;
+    }
+    #navbar{
+        border-bottom: 1px #43D9AD solid;
+    }
+    .nav-item{
+        margin-top: 30px;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+
+    .hero-content{
+        width: 100%;
+        padding: 0px 20px;
+        padding-right: 30px;
+        margin-top: 150px;
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+    }
+    .hero-link {
+        display: none;
+    }
+    .hero-img{
+        width: 100%;
+        text-align: center;
+    }
+    .for-mobile ul{
+        margin-top: -60px;
+    }
+    .for-mobile ul li a{
+        color: #fff;
+        font-size: 20px;
+    }
+    .mobile-scroll{
+        text-align: center;
+        margin-top: 20px;
+        color: #43D9AD;
+    }
+    .mobile-scroll a i{ 
+        color: #43D9AD;
+    }
+    .dis-between{
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-iteam{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .about-content{
+        width: 100%;
+    }
+    .about{
+        padding: 150px 0px 50px;
+    }
+    .Prosjekter {
+        padding: 150px 0px 50px;
+    }
+    .navbar-different-pages{
+        height: auto;
+    }
+    .project-iteam{
+        flex-direction: column;
+    }
+    .project-iteam-img{
+        width: 100%;
+    }
+    .project-iteam-content{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .project-iteam-content ul{
+        flex-wrap: wrap;
+    }
+    .project-iteam-content ul li{
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .for-mobile ul{
+        margin-top: 30px;
+    }
+    .hero-section{
+        height: auto;
+    }
+}
