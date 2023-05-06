@@ -18,6 +18,7 @@
 
   	<!-- Font awesome -->
 	<script src="https://kit.fontawesome.com/b2b7d27ef0.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
@@ -31,7 +32,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<li class="nav-item ">
 						<a class="nav-link " href="om-meg.html">Om meg <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
@@ -42,7 +43,7 @@
 						<a class="nav-link" href="#conatct">kontakt</a>
 					</li>	
 					<li class="nav-item">
-						<a class="nav-link" href="https://kenneth.lokoydesign.com/documents/cv.pdf" target="_blank">Cv</a>
+						<a class="nav-link" href="https://kenneth.lokoydesign.com/documents/cv.pdf" >Cv</a>
 					</li>
 							
 								
@@ -58,85 +59,93 @@
             <div class="page-title">
                 <h2>Prosjekter</h2>
             </div>
-            <div class="fliter">
-                <ul class="filter-btn">
-                    <li class="mixitup-control-active " data-filter="all">All</li>
-                    <li data-filter=".cat-1">Guided</li>
-                    <li data-filter=".cat-2">JavaScript </li>
-                    <li data-filter=".cat-3">Python</li>
-                </ul>
-            </div>
-            <div class="project-filter">
-                <div class="project-box">
-                    <div class="project-iteam mix cat-1">
-                        <div class="project-iteam-img">
-                            <img src="images/project-img.png" alt="">
+
+
+            <div>
+                <button class="filter-button" onclick="filterItems('all')">All</button>
+                <button class="filter-button" onclick="filterItems('guided')">Guided</button>
+                <button class="filter-button" onclick="filterItems('javaScript')">JavaScript</button>
+                <button class="filter-button" onclick="filterItems('python')">Python</button>
+              </div>
+
+            <div class="row dis-flex mar-top items guided">
+                <div class="col-md-6">
+                    <div class="project-iteam-img">
+                        <img src="images/project-img.png" alt="">
+                    </div>
+                </div>    
+                <div class="col-md-6">
+                    <div class="project-iteam-content">
+                        <h3>Project Title1</h3>
+                         <p><span>Project Description:</span> dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
+                        <ul>
+                            <li>Next JS</li>
+                            <li>React</li>
+                            <li>Python</li>
+                            <li>Python</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="#"><button class="demo-btn">Demo</a>
+                            <a href=""><button class="git-btn"><i class="fab fa-github"></i>KILDEKODE</button></a>
                         </div>
-                        <div class="project-iteam-content">
-                            <h3>Project Title1</h3>
-                            <p><span>Project Description:</span> dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
-                            <ul>
-                                <li>Next JS</li>
-                                <li>React</li>
-                                <li>Python</li>
-                                <li>Python</li>
-                            </ul>
-                            <div class="project-btn">
-                                <ul>
-                                    <li class="btn-colo"><a href="#" >Demo</a></li>
-                                    <li><a href="#"><img src="images/git.png" alt=""></a></li>
-                                </ul>
-                            </div>
+                    </div>
+                </div>        
+            </div><!-- row -->
+
+            <div class="row flex-start mar-top items javaScript">
+                <div class="col-md-6">
+                    <div class="project-iteam-img">
+                        <img src="images/project-img.png" alt="">
+                    </div>
+                </div>    
+                <div class="col-md-6">
+                    <div class="project-iteam-content">
+                        <h3>Project Title2</h3>
+                         <p><span>Project Description:</span> dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
+                        <ul>
+                            <li>Next JS</li>
+                            <li>React</li>
+                            <li>Python</li>
+                            <li>Python</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="#"><button class="demo-btn">Demo</a>
+                            <a href=""><button class="git-btn"><i class="fab fa-github"></i>KILDEKODE</button></a>
                         </div>
-                    </div><!-- project-iteam -->
+                    </div>
+                </div>        
+            </div><!-- row -->
+
+            <div class="row flex-start mar-top items python">
+                <div class="col-md-6">
+                    <div class="project-iteam-img">
+                        <img src="images/project-img.png" alt="">
+                    </div>
+                </div>    
+                <div class="col-md-6">
+                    <div class="project-iteam-content">
+                        <h3>Project Title2</h3>
+                         <p><span>Project Description:</span> dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
+                        <ul>
+                            <li>Next JS</li>
+                            <li>React</li>
+                            <li>Python</li>
+                            <li>Python</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="#"><button class="demo-btn">Demo</a>
+                            <a href=""><button class="git-btn"><i class="fab fa-github"></i>KILDEKODE</button></a>
+                        </div>
+                    </div>
+                </div>        
+            </div><!-- row -->
                     
-                    <div class="project-iteam mix cat-2">
-                        <div class="project-iteam-img">
-                            <img src="images/project-img.png" alt="">
-                        </div>
-                        <div class="project-iteam-content">
-                            <h3>Project Title2</h3>
-                            <p><span>Project Description:</span> dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
-                            <ul>
-                                <li>Next JS</li>
-                                <li>React</li>
-                                <li>Python</li>
-                                <li>Python</li>
-                            </ul>
-                            <div class="project-btn">
-                                <ul>
-                                    <li class="btn-colo"><a href="#" >Demo</a></li>
-                                    <li><a href="#"><img src="images/git.png" alt=""></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!-- project-iteam -->
+
     
-                    <div class="project-iteam mix cat-3">
-                        <div class="project-iteam-img">
-                            <img src="images/project-img.png" alt="">
-                        </div>
-                        <div class="project-iteam-content">
-                            <h3>Project Title</h3>
-                            <p><span>Project Description:</span> dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
-                            <ul>
-                                <li>Next JS</li>
-                                <li>React</li>
-                                <li>Python</li>
-                                <li>Python</li>
-                            </ul>
-                            <div class="project-btn">
-                                <ul>
-                                    <li class="btn-colo"><a href="#" >Demo</a></li>
-                                    <li><a href="#"><img src="images/git.png" alt=""></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!-- project-iteam -->
-    
-                </div><!-- project-box -->
+
             </div>
         </div><!-- container -->
+        
     </section>
 
 
@@ -148,6 +157,7 @@
 	<footer class="second-bg-color" id="conatct">
 		<div class="container">
 			<div class="dis-between">
+                
 				<div class="footer-iteam">
 					<h3>Kontakt Informasjon
 					</h3>
@@ -171,22 +181,13 @@
 
 	
 	  
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+	
 	<!-- jquary-cdn-link -->
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   	<!-- animation cdn lik -->
     <script src="js/wow.min.js"></script>
-	<!-- jquary-pluging-typed-link -->
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  
-    <!-- particles -->
-	<script src="js/particles.js" ></script>
-    <!-- mixitup pluging -->
-	<script src="js/mixitup.min.js"></script>
-    <script src="js/filter.js"></script>  
 	<!-- main.js -->
     <script src="js/main.js"></script>
     

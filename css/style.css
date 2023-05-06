@@ -28,6 +28,10 @@ p{
 	display: flex;
 	align-items: center;
 }
+.flex-start{
+	display: flex;
+	align-items: flex-start!important;
+}
 .section-padding{
 	width: 100%;
 	display: flex;
@@ -232,8 +236,10 @@ footer{
 	margin: 0 auto;
 }
 .footer-iteam{
-	width: 40%;
+	width: 30%;
+	flex-basis: content;
 }
+
 footer h3{
 	font-size: 20px;
 	color: #fff;
@@ -362,14 +368,31 @@ footer ul li a:hover{
 	margin-top: 50px;
 	justify-content: space-between;
 }
+.mar-top{
+	margin-top: 50px;
+}
+.items{
+	transition:  0.5s ease-in-out;
+}
+.filter-button{
+	background: transparent;
+	color: #fff;
+	border: none;
+	
+	padding:0 10px;
+}
+.filter-button:focus{
+	outline: none;
+	color: #43D9AD;
+}
 .project-iteam-img {
-	width: 48%;
+	width: 100%;
 }
 .project-iteam-img img{
 	width: 100%;
 }
 .project-iteam-content{
-	width: 48%;
+	width:100%;
 	color: #FFFFFF;
 }
 .project-iteam-content h3{
@@ -382,35 +405,88 @@ footer ul li a:hover{
 .project-iteam-content ul{
 	display: flex;
 	margin: 40px 0;
+	flex-wrap: wrap;
 	padding: 0;
 }
 .project-iteam-content ul li{
-	padding: 8px 25px;
+	padding: 5px 15px;
 	background: #23455A;
 	margin-right: 15px;
-	border-radius: 15px;
+	border-radius: 5px;
+	font-size: 0.75rem;
 }
-.project-btn ul{
-	align-items: center;
-	margin-top: 00px;
-}
-.project-btn ul li{
-	background: transparent;
-	padding: 0;
-}
-.btn-colo a{
-	border: 2px #43D9AD solid;
-	padding: 8px 45px;
-	color: #43D9AD;
-	border-radius: 10px;
-	transition: .6s;
-}
-.btn-colo a:hover{
-	border: 2px #fff solid;
-	background: #43D9AD;
-	color: #FFFFFF;
-}
-.mixitup-control-active{
-	color: #43D9AD!important;
+.project-buttons{
+	display: flex;
+	position: relative;
+	width: 100%;
+	z-index: 999;
 }
 
+.git-btn{
+	background: none;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	padding: 0.3em 1em;
+	margin: 10px;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: color 0.4s linear;
+	position: relative;
+}
+.pro-btn{
+	padding: 0.6em 1em;
+}
+
+.demo-btn{
+	background: #F7FFF2;
+	text-transform: uppercase;
+	padding: 0.3em 1em;
+	margin: 10px;
+	border: none;
+	color: #000;
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: color 0.4s linear;
+}
+.project-buttons a{
+	color: #000;
+	transition: .6s;
+}
+.project-buttons a:hover{
+	color: #000;
+}
+.demo-btn:hover{
+	background: #fff;
+}
+  .git-btn i {
+    margin-inline-end: 0.5em;
+}
+  .git-btn:hover{
+	color: #000;
+  }
+  .git-btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background:#F7FFF2;
+	color: #000;
+	z-index: -1;
+	transition: transform 0.5s;
+	transform-origin: 0 0;
+	transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+  .git-btn::before{
+	transform: scaleX(0);
+  }
+  
+  .git-btn:hover::before{
+	transform: scaleX(1);
+	color: #000;
+  }
+  

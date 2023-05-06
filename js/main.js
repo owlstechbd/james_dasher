@@ -20,6 +20,24 @@ $('.for-mobile a[href^="#"]').click(function(e) {
 
 // fillter pluging
 
+function filterItems(filter = 'all') {
+  var items = document.getElementsByClassName('items');
+  
+  for (var i = 0; i < items.length; i++) {
+    if (filter === 'all' || items[i].classList.contains(filter)) {
+      items[i].style.display = '';
+    } else {
+      items[i].style.display = 'none';
+    }
+  }
+}
+
+function init() {
+  filterItems();
+}
+
+window.onload = init;
+
 
 var typed = new Typed('.typed', {
   strings:[
