@@ -1,7 +1,15 @@
+@media screen and (max-width: 1130px){
+    .project-width{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 820px){
     .about-content{
         width: 100%;
         margin-bottom: 30px;
+    }
+    .dis-flex{
+        align-items: center;
     }
     .about-content ul{
         justify-content: center;
@@ -41,6 +49,7 @@
     }
 
     .hero-section{
+        height: 87vh;
         flex-direction: column-reverse;
     }
 
@@ -130,6 +139,6 @@
         margin-top: 30px;
     }
     .hero-section{
-        height: auto;
+        height: 90vh;
     }
 }

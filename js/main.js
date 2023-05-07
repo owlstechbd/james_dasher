@@ -18,16 +18,28 @@ $('.for-mobile a[href^="#"]').click(function(e) {
   },500);
 });
 
+
+
+
 // fillter pluging
 
 function filterItems(filter = 'all') {
   var items = document.getElementsByClassName('items');
+  var buttons = document.getElementsByClassName('filter-button');
   
   for (var i = 0; i < items.length; i++) {
     if (filter === 'all' || items[i].classList.contains(filter)) {
       items[i].style.display = '';
     } else {
       items[i].style.display = 'none';
+    }
+  }
+  
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].getAttribute('onclick').includes(filter)) {
+      buttons[i].classList.add('active-filter');
+    } else {
+      buttons[i].classList.remove('active-filter');
     }
   }
 }
