@@ -270,6 +270,8 @@ footer ul li a:hover{
 .about{
 	 display: flex;
 	 width: 100%;
+	 align-items: center;
+	 height: 100vh;
 	 padding: 200px 0 100px;
 }
 .navbar-different-pages{
@@ -420,6 +422,7 @@ footer ul li a:hover{
 	margin-right: 15px;
 	border-radius: 5px;
 	font-size: 0.75rem;
+	margin-bottom: 10px;
 }
 .project-buttons{
 	display: flex;

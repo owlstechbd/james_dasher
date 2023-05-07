@@ -49,8 +49,9 @@
     }
 
     .hero-section{
-        height: 87vh;
+        height: auto;
         flex-direction: column-reverse;
+        padding-bottom: 50px;
     }
 
     .hero-content{
@@ -105,6 +106,7 @@
         width: 100%;
     }
     .about{
+        height: auto;
         padding: 50px 0px 50px;
     }
     .Prosjekter {
