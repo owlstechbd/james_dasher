@@ -63,13 +63,20 @@
         height: auto;
         flex-direction: column-reverse;
         padding-bottom: 50px;
+        
     }
 
     .hero-content{
         width: 100%;
         padding: 0px 20px;
         padding-right: 30px;
-        margin-top: 150px;
+        margin-top: 50px;
+    }
+    #hero{
+        height: 100vh;
+    }
+    canvas.particles-js-canvas-el{
+        height: 100vh!important;
     }
 
     .hero-content h1 {
@@ -151,7 +158,8 @@
     .for-mobile ul{
         margin-top: 30px;
     }
-    .hero-section{
-        height: 100vh;
+   
+    .hero-content h1 {
+        font-size: 45px;
     }
 }
