@@ -47,7 +47,10 @@ p{
 	background: #011627;
 }
 .link-color{
-	color:#62FBD7;
+	color:#43D9AD;
+}
+.white-color {
+	color: #fff;
 }
 
 #hero{
@@ -76,7 +79,6 @@ p{
 	margin: 0 10px;
 }
 .navbar-brand p {
-	color: #ffffff;
 	font-size: 32px;
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
@@ -271,7 +273,7 @@ footer ul li a:hover{
 	 display: flex;
 	 width: 100%;
 	 align-items: center;
-	 height: 90vh;
+	 height: 85vh;
 	 padding: 200px 0 100px;
 }
 .navbar-different-pages{

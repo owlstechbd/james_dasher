@@ -53,7 +53,7 @@ window.onload = init;
 
 var typed = new Typed('.typed', {
   strings:[
-    "Front end developer ",
+    "Front-end dev",
     "Python Enthusiast",
     
   ],
